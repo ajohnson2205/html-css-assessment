@@ -31,7 +31,7 @@ h2 {
 .navbar-options-alt {
   display: none;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-end;
   list-style: none;
   margin-top: 0px;
   padding-top: 20px;
@@ -40,6 +40,7 @@ h2 {
   font-weight: 400;
   color: white;
   height: 23px;
+  margin-bottom: 20px;
 
 }
 
@@ -90,17 +91,29 @@ h2 {
 }
 
 .burgerz {
-  height: 63px;
-  width: 63px;
+  height: 30px;
+  width: 30px;
 }
-
 
 
 .burger-holder {
   position: fixed;
   left: 20px;
-
 }
+
+.icon-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px;
+  padding-left: 20px;
+}
+
+.fa {
+  padding-right: 20px;
+}
+
+
 
 @media (max-width : 768px) {
 
@@ -110,6 +123,10 @@ h2 {
 
   .navbar-options-alt {
     display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
   }
+
+
 
 }
